@@ -1,0 +1,34 @@
+section.city-section
+  .wrapper
+    .city-section__inner.text-center
+      h2.city-section__title
+        span.city-section__title-main.font-s-52.d-block Откройте школу игры 
+          br
+          span.font-m-reg на барабанах в своем городе 
+        span.city-section__title-secondary.d-block.color-red-2
+          span.font-m-reg с чистой прибылью 
+          br
+          | от 295 900 рублей в месяц
+
+      .city-section__feedback
+        .feedback
+          form(data-feedback-form).feedback__form
+            .feedback__title.color-grey-2.font-s-20 Проверьте, свободен ли ваш город 
+              br
+              |для работы по франшизе «GO!DRUMS»
+            .feedback__list
+              .feedback__item
+                .input
+                  input(type="text" name="city" autocomplete="off" placeholder="ГОРОД").input__field
+              .feedback__item
+                .input
+                  input(type="text" name="name" autocomplete="off" placeholder="Имя").input__field
+              .feedback__item
+                .input
+                  input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон").input__field
+              .feedback__item
+                button.btn(type="submit")
+                  span Узнать
+
+    .city-section__footer
+      +footer
