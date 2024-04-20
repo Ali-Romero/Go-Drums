@@ -4,19 +4,23 @@ section.main-section
   .wrapper
     .main-section__inner
       h1.main-section__title
-        span.main-section__title-main.font-s-76.d-block.font-r-reg.text-up Откройте свой 
+        span.main-section__title-main.font-s-62.d-block.font-m-e-bold Откройте школу 
           br
-          |ресторанный 
+          |игры на барабанах 
           br
-          |бизнес
-        span.main-section__title-secondary.d-block.font-s-38.font-roboto.text-init с чистой прибылью от 8 млн рублей
+          span.d-block.font-m-reg с авторской методикой 
+            br
+            |обучения
+        span.main-section__title-secondary.font-m-reg.font-s-28
+          span и прибылью 
+            br
+            span.font-m-bold от 295 000 ₽ 
+            br
+            |в месяц
 
       .main-section__feedback
         .feedback
           form(data-feedback-form).feedback__form
-            .feedback__title.font-s-24.color-grey-1 Получите подробный план 
-              br
-              |открытия ресторана
             .feedback__list
               .feedback__item
                 .input
@@ -26,31 +30,23 @@ section.main-section
                   input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон").input__field
               .feedback__item
                 button.btn(type="submit")
-                  span Получить
+                  span Узнать
 
-      .main-section__cards.font-s-18
-        .main-section__cards-list
-          .main-section__cards-item
-            .main-section__card
-              .main-section__card-icon
-                img(src="images/checked.svg" loading="lazy" alt="image" width="21" height="21").d-block
-              .main-section__card-description Надежная 
-                br
-                |бизнес-модель
-          .main-section__cards-item
-            .main-section__card
-              .main-section__card-icon
-                img(src="images/checked.svg" loading="lazy" alt="image" width="21" height="21").d-block
-              .main-section__card-description 14-летний 
-                br
-                |опыт
-          .main-section__cards-item
-            .main-section__card
-              .main-section__card-icon
-                img(src="images/checked.svg" loading="lazy" alt="image" width="21" height="21").d-block
-              .main-section__card-description Высокая 
-                br
-                |рентабельность
-
-      .main-section__photo
-        img(src="images/leader-photo.png" loading="lazy" alt="photo" width="926" height="935").d-block
+      .main-section__swiper.swiper-main
+        .main-section__swiper-wrapper.swiper-wrapper
+          .main-section__swiper-slide.swiper-slide
+            .main-section__swiper-image
+              img(src="images/main-image-1.jpg" loading="lazy" alt="image" width="280" height="192").d-block
+          .main-section__swiper-slide.swiper-slide
+            .main-section__swiper-image
+              img(src="images/main-image-2.jpg" loading="lazy" alt="image" width="280" height="192").d-block
+          .main-section__swiper-slide.swiper-slide
+            .main-section__swiper-image
+              img(src="images/main-image-3.jpg" loading="lazy" alt="image" width="280" height="192").d-block
+          .main-section__swiper-slide.swiper-slide
+            .main-section__swiper-image
+              img(src="images/main-image-4.jpg" loading="lazy" alt="image" width="280" height="192").d-block
+        .main-section__swiper-fraction.swiper-main-fraction
+          span.current 01
+          .main-section__swiper-progress.main-pagination
+          span.total 04

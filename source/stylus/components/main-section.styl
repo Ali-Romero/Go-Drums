@@ -1,110 +1,105 @@
 .main-section
   position relative
   z-index 12
-  background-image: url('../images/main-bg.jpg')
-  background-repeat: no-repeat
-  background-position: left center
-  background-size: cover
-  +above($breakpoints.sm)
-    background-position: center
+  background: linear-gradient(81deg, #1b1b1b 0%, #1c1c1c 100%);
+  color: $color-white
+  &:before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    right 0
+    bottom: 0
+    background-image: url('../images/main-bg-mob.svg')
+    background-repeat: no-repeat
+    background-position: left center
+    background-size: cover
+    +above($breakpoints.sm)
+      background-position: center
+      background-image: url('../images/main-bg.jpg')
 
   &__inner
-    padding: 26px 0 69px 0
+    padding: 26px 0 40px 0
     position relative
     z-index 10
     text-align: center
     +above($breakpoints.sm)
       text-align: left
-      padding: 20px 0 60px 0
+      padding: 30px 0 72px 0
     +above($breakpoints.md)
-      padding: 36px 0 100px 0
+      padding: 50px 0 100px 0
     +above($breakpoints.xxl)
-      padding: 126px 0 138px 0
+      padding: 125px 0 250px 0
 
   &__title
-    margin: 0 0 24px 0
+    margin: 0 -10px 30px -10px
     +above($breakpoints.sm)
-      margin: 0 0 20px 0
+      margin: 0 0 24px 0
     +above($breakpoints.md)
       margin: 0 0 30px 0
     +above($breakpoints.xxl)
-      margin: 0 0 50px 0
-
-  &__title-main
-    margin: 0 0 8px 0
-    +above($breakpoints.md)
-      margin: 0 0 14px 0
-    +above($breakpoints.xxl)
-      margin: 0 0 21px 0
+      margin: 0 0 43px 0
 
   &__title-secondary
     position relative
-    border: 2px solid #d45006;
-    border-radius: 93px;
-    padding: 0 15px 3px 14px
-    display: inline-block
-    font-weight: 400
-    +above($breakpoints.md)
-      padding: 0 17px 4px 16px
-
-  &__cards
-    +above($breakpoints.sm)
-      position: absolute
-      right: 33px;
-      bottom: 77px;
-    +above($breakpoints.md)
-      right: 138px;
-      bottom: 100px;
-    +above($breakpoints.xxl)
-      right 100px
-      bottom: 138px
-
-  &__cards-list
+    z-index 1
+    backdrop-filter: blur(10.2px);
+    background: linear-gradient(156.96deg, rgba(255, 255, 255, 0.2) 14.789%,rgba(255, 184, 0, 0.2) 87.037%);
+    border: 1px solid rgba(255, 184, 0, 0.2)
     display: flex
-    flex-direction: column
-    gap: 18px
+    align-items: center
+    justify-content: center
+    text-align: center
+    border-radius: 14px
+    padding: 10px 4px
+    margin: 20px 0 0 0
     +above($breakpoints.sm)
-      flex-direction: row
-      gap: 10px
+      padding 0
+      width: 166px;
+      border-radius: 100%
+      position: absolute
+      z-index -1
+      bottom: 99px;
+      left: 235px;
+      width: 166px;
+      height: 166px;
     +above($breakpoints.md)
-      gap: 14px
+      bottom: 134px;
+      left: 271px;
+      width: 194px;
+      height: 194px;
     +above($breakpoints.xxl)
-      gap: 20px
-
-  &__cards-item
-    text-align: left
-    +above($breakpoints.sm)
-      width: auto !important
-
-  &__card-icon
-    position: absolute
-    top: -11px
-    left: 23px
-
-  &__card
-    backdrop-filter: blur(20.399999618530273px);
-    box-shadow: 0 25px 37px 0 rgba(0, 0, 0, 0.05);
-    background: rgba(255, 255, 255, 0.9);
-    font-weight: 600
-    border-radius: 15px;
-    padding: 17px 0 0 13px;
-    height: 68px;
-    width: 164px;
-    +above($breakpoints.sm)
-      width: 150px;
-      height: 72px;
-    +above($breakpoints.md)
-      width: 165px;
-      height: 80px;
-      border-radius: 15px;
-      padding: 20px 0 0 17px;
-    +above($breakpoints.xxl)
-      width 180px
-      height: 95px
-      border-radius: 15px
-      padding: 26px 0 0 21px
-    br
-      display: block
+      bottom: 297px
+      left: 400px
+      width 240px
+      height: 240px
+    &:before
+      content: ""
+      position: absolute
+      border-radius: 20px
+      border: 1px solid rgba(255, 184, 0, 0.2)
+      backdrop-filter: blur(10.2px);
+      z-index -2
+      top: -12px
+      left: -12px
+      right -12px
+      bottom: -12px
+      +above($breakpoints.sm)
+        border-radius: 100%;
+        top: -30px
+        left: -30px
+        right -30px
+        bottom: -30px
+      +above($breakpoints.md)
+        top: -40px
+        left: -40px
+        right -40px
+        bottom: -40px
+      +above($breakpoints.xxl)
+        top: -60px
+        left: -60px
+        right -60px
+        bottom: -60px
 
   &__feedback
     margin: 0 0 49px 0
@@ -115,27 +110,56 @@
         flex-direction: column
         align-items: flex-start
 
-  &__photo
-    position: absolute
-    z-index -1
-    bottom: 0;
-    right: calc(50% - 208px);
-    pointer-events: none
+  &__swiper
+    width: 280px;
+    margin: 0 auto
     +above($breakpoints.sm)
-      right -33px
+      width: 230px;
+      margin: 0
+      position: absolute
+      right: 26px;
+      bottom: 48px;
     +above($breakpoints.md)
-      right 61px
+      right: 34px;
+      bottom: 33px;
+      width: 250px;
     +above($breakpoints.xxl)
-      right -46px
+      right 0
+      bottom: 90px
+      width 280px
 
+  &__swiper-image
     img
+      border-radius: 10px
+      width 100%
       height: auto
-      width 348px
-      margin: 0 auto
-      +above($breakpoints.sm)
-        margin: 0
-        width 466px
-      +above($breakpoints.md)
-        width 641px
-      +above($breakpoints.xxl)
-        width 926px
+
+  &__swiper-fraction
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width 110px
+    margin: 14px auto 0 auto
+    font-size: 18px
+    line-height: normal
+    font-family: "Montserrat-Medium"
+    +above($breakpoints.sm)
+      margin: 14px 0 0 0
+    +above($breakpoints.md)
+      margin: 20px 0 0 0
+    +above($breakpoints.xxl)
+      width 125px
+      margin: 24px 0 0 0
+
+  &__swiper-progress
+    display: block
+    position relative
+    background: $color-white
+    width 44px !important
+    height: 2px !important
+    +above($breakpoints.xxl)
+      width 53px !important
+    .swiper-pagination-progressbar-fill
+      background: $color-red-1
+      top: 0
+      bottom: 0

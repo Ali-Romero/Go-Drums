@@ -1,3 +1,6 @@
 mixin connection()
   .connection
-    a(href="tel:+79990000000").connection__num.font-r-r +7 (999) 000-00-00
+    a(href="tel:+79990000000").connection__num
+      img(src="images/connection-icon.svg" loading="lazy" alt="icon" width="20" height="20").d-block.connection__icon
+      span +7 (999) 
+        span.font-m-bold 000-00-00

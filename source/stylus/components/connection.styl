@@ -1,11 +1,22 @@
 .connection
-  line-height: normal
-  font-size: 17px
-  font-family: "Philosopher-Bold"
-  color: #472d14;
-  +above($breakpoints.sm)
-    font-size: 16px
-  +above($breakpoints.md)
-    font-size: 18px
-  +above($breakpoints.xxl)
-    font-size: 22px
+  &__num
+    display: flex
+    align-items: center
+    line-height: normal
+    font-size: 15px
+    gap: 6px
+    +above($breakpoints.sm)
+      font-size: 16px
+      gap: 10px
+    +above($breakpoints.md)
+      gap: 18px
+    +above($breakpoints.xxl)
+      gap: 23px
+      font-size: 18px
+    img
+      height: auto
+      width 14px
+      +above($breakpoints.sm)
+        width 16px
+      +above($breakpoints.md)
+        width 20px
