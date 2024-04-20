@@ -1,0 +1,56 @@
+section.main-section
+
+  +header(true)
+  .wrapper
+    .main-section__inner
+      h1.main-section__title
+        span.main-section__title-main.font-s-76.d-block.font-r-reg.text-up Откройте свой 
+          br
+          |ресторанный 
+          br
+          |бизнес
+        span.main-section__title-secondary.d-block.font-s-38.font-roboto.text-init с чистой прибылью от 8 млн рублей
+
+      .main-section__feedback
+        .feedback
+          form(data-feedback-form).feedback__form
+            .feedback__title.font-s-24.color-grey-1 Получите подробный план 
+              br
+              |открытия ресторана
+            .feedback__list
+              .feedback__item
+                .input
+                  input(type="text" name="name" autocomplete="off" placeholder="Имя").input__field
+              .feedback__item
+                .input
+                  input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон").input__field
+              .feedback__item
+                button.btn(type="submit")
+                  span Получить
+
+      .main-section__cards.font-s-18
+        .main-section__cards-list
+          .main-section__cards-item
+            .main-section__card
+              .main-section__card-icon
+                img(src="images/checked.svg" loading="lazy" alt="image" width="21" height="21").d-block
+              .main-section__card-description Надежная 
+                br
+                |бизнес-модель
+          .main-section__cards-item
+            .main-section__card
+              .main-section__card-icon
+                img(src="images/checked.svg" loading="lazy" alt="image" width="21" height="21").d-block
+              .main-section__card-description 14-летний 
+                br
+                |опыт
+          .main-section__cards-item
+            .main-section__card
+              .main-section__card-icon
+                img(src="images/checked.svg" loading="lazy" alt="image" width="21" height="21").d-block
+              .main-section__card-description Высокая 
+                br
+                |рентабельность
+
+      .main-section__photo
+        img(src="images/leader-photo.png" loading="lazy" alt="photo" width="926" height="935").d-block

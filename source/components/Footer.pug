@@ -1,0 +1,16 @@
+mixin footer(index)
+  footer.footer
+    .wrapper
+      .footer__row
+
+        .footer__col
+          .footer__logo
+            img(src="images/logo-main.svg" loading="lazy" alt="logo" width="217" height="64").d-block
+
+        .footer__col
+          .footer__description.text-center Франшиза сети ресторанов, 
+            span(data-current-year)
+
+        .footer__col
+          .footer__connection
+            +connection()

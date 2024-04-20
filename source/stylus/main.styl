@@ -1,0 +1,49 @@
+@font-face
+  font-family: "Philosopher-Regular"
+  src: url('../fonts/Philosopher-Regular.woff'), url('../fonts/Philosopher-Regular.woff2')
+  font-display: swap
+@font-face
+  font-family: "Philosopher-Bold"
+  src: url('../fonts/Philosopher-Bold.woff'), url('../fonts/Philosopher-Bold.woff2')
+  font-display: swap
+
+@font-face
+  font-family: "RobotoFlex"
+  src: url('../fonts/RobotoFlex.ttf')
+  font-display: swap
+
+
+@font-face
+  font-family: "Philosopher-Regular"
+  src: url('../fonts/Philosopher-Regular.woff'), url('../fonts/Philosopher-Regular.woff2')
+  font-display: swap
+@font-face
+  font-family: "Philosopher-Bold"
+  src: url('../fonts/Philosopher-Bold.woff'), url('../fonts/Philosopher-Bold.woff2')
+  font-display: swap
+
+@import 'common/variables'
+@import 'common/*'
+@import 'components/*'
+
+.page
+  display: flex
+  flex-direction: column
+  min-height: 100%
+  overflow: hidden
+  position relative
+
+  &--thanks
+    background: linear-gradient(180deg, #faefa4 0%, #b8c883 100%);
+    font-size: 13px
+    line-height: 130%
+    +above($breakpoints.xxl)
+      font-size: 16px
+
+  &__content
+    flex: 1
+    &--layout
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
