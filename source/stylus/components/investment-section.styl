@@ -1,0 +1,199 @@
+.investment-section
+  position relative
+  z-index 12
+  background: linear-gradient(81deg, #1b1b1b 0%, #1c1c1c 100%);
+  background-color: #1A1A1A
+  color: $color-white
+  &:before
+    content: ""
+    position: absolute
+    z-index -1
+    top: 0
+    left: 0
+    right 0
+    bottom: 0
+    background-image: url('../images/investment-bg.svg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+
+  &__inner
+    padding: 50px 0
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: left 
+      padding: 60px 0
+    +above($breakpoints.md)
+      padding: 80px 0
+    +above($breakpoints.xxl)
+      padding: 100px 0
+
+  &__title
+    margin: 0 0 22px 0
+    +above($breakpoints.md)
+      margin: 0 0 20px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 30px 0
+
+  &__title-helper
+    margin: 0 0 26px 0
+    +above($breakpoints.sm)
+      margin: 0 0 30px 0
+    +above($breakpoints.md)
+      margin: 0 0 50px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 74px 0
+
+  &__list
+    margin: 0 0 58px 0
+    +above($breakpoints.sm)
+      width 626px
+      margin: 0 0 68px 0
+    +above($breakpoints.md)
+      width 768px
+      margin: 0 0 100px 0
+    +above($breakpoints.xxl)
+      width 1000px
+      margin: 0 0 151px 0
+
+  &__item
+    &:first-child
+      .investment-section__btn-container
+        padding-top 0
+
+  &__btn-container
+    display: flex
+    justify-content: space-between
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+    cursor pointer
+    color: rgba(255, 255, 255, 0.4)
+    transition: color 0.2s
+    padding: 16px 0 9px 0
+    flex-direction: column
+    gap: 10px
+    -webkit-tap-highlight-color: transparent
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    +above($breakpoints.sm)
+      flex-direction: row
+    +above($breakpoints.md)
+      padding: 24px 0 12px 0
+    +above($breakpoints.xxl)
+      padding: 30px 0 16px 0
+    .btn
+      background: #434343
+      background: linear-gradient(90deg, #434343 0%, #434343 100%);
+      color: #818181
+    &.active,
+    &:hover
+      color: rgba(255, 255, 255, 1)
+      .btn
+        background: linear-gradient(90deg, #e31e24 0%, #ff6b00 100%);
+        color: $color-white
+
+  &__btn-description
+    font-size: 20px
+    +above($breakpoints.sm)
+      font-size: 24px
+    +above($breakpoints.md)
+      font-size: 33px
+    +above($breakpoints.xxl)
+      font-size: 48px
+
+  &__btn
+    width 250px
+    margin: 0 auto
+    +above($breakpoints.sm)
+      margin: 0
+      width 200px
+    +above($breakpoints.md)
+      width 230px
+    +above($breakpoints.xxl)
+      width 251px
+
+  &__content
+    display: flex
+    gap: 27px;
+    margin: 0 0 46px 0;
+    flex-direction: column
+    +above($breakpoints.sm)
+      flex-direction: row
+      margin: 0 0 50px 0;
+    +above($breakpoints.md)
+      gap: 80px;
+      margin: 0 0 60px 0;
+    +above($breakpoints.xxl)
+      gap: 120px
+      margin: 0 0 101px 0
+
+  &__content-image
+    img
+      height: auto
+      width 266px
+      margin: 0 auto
+      +above($breakpoints.sm)
+        width 222px
+      +above($breakpoints.md)
+        width 294px
+      +above($breakpoints.xxl)
+        width 380px
+
+  &__content-title
+    margin: 0 0 22px 0
+    +above($breakpoints.sm)
+      margin: 0 0 16px 0
+    +above($breakpoints.md)
+      margin: 0 0 20px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 30px 0
+
+  &__content-helper
+    text-align: left
+    margin: 0 0 18px 0
+    +above($breakpoints.sm)
+      margin: 0 0 29px 0
+    +above($breakpoints.md)
+      margin: 0 0 40px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 50px 0
+
+  &__content-info
+    ul
+      display: flex
+      flex-wrap: wrap
+      gap: 25px 14px;
+      +above($breakpoints.md)
+        gap: 38px 62px
+      +above($breakpoints.xxl)
+        gap: 50px 82px
+      li
+        display: flex
+        min-width: 219px;
+        gap: 8px;
+        text-align: left
+        +above($breakpoints.md)
+          min-width: 231px
+          gap: 13px
+        +above($breakpoints.xxl)
+          min-width: 276px
+          gap: 20px
+        img
+          height: auto
+          width 18px
+          +above($breakpoints.md)
+            width 22px
+
+  &__feedback
+    display: flex
+    justify-content: flex-end
+    .feedback
+      &__item
+        +above($breakpoints.sm)
+          width: 175px
+        +above($breakpoints.md)
+          width: 220px
+        +above($breakpoints.xxl)
+          width: 251px

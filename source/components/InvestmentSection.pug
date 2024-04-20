@@ -1,0 +1,92 @@
+section.investment-section
+  .wrapper
+    .investment-section__inner
+      h2.investment-section__title.font-s-52 Какие вложения 
+        br
+        span.font-m-reg понадобятся на старте
+
+      .investment-section__title-helper.font-s-24 Франшиза в цифрах
+
+      .investment-section__list.font-m-bold.text-up
+        .investment-section__item
+          .investment-section__btn-container.investment-js.active(data-remodal-target="form-modal-investment")
+            .investment-section__btn-description.font-m-bold до 500 000 жителей
+            .investment-section__btn
+              button.btn
+                span Узнать
+        .investment-section__item
+          .investment-section__btn-container.investment-js(data-remodal-target="form-modal-investment")
+            .investment-section__btn-description.font-m-bold до 1 000 000 жителей
+            .investment-section__btn
+              button.btn
+                span Узнать
+        .investment-section__item
+          .investment-section__btn-container.investment-js(data-remodal-target="form-modal-investment")
+            .investment-section__btn-description.font-m-bold от 1 000 000 жителей
+            .investment-section__btn
+              button.btn
+                span Узнать
+
+      .investment-section__content
+        .investment-section__content-image
+          img(src="images/investment-image.jpg" loading="lazy" alt="icimageon" width="380" height="550").d-block
+        .investment-section__content-container
+          h2.investment-section__content-title.font-s-52 Узнайте все детали 
+            br
+            span.font-m-reg и секреты 
+              br
+              |успешного запуска
+          .investment-section__content-helper.font-s-24 Ждем вас на экскурсию, где расскажем:
+
+          .investment-section__content-info.font-m-med
+            ul
+              li
+                img(src="images/star-2.svg" loading="lazy" alt="icon" width="22" height="22").d-block
+                div Как построены 
+                  br
+                  |ключевые процессы
+              li
+                img(src="images/star-2.svg" loading="lazy" alt="icon" width="22" height="22").d-block
+                div Какие методы обучения 
+                  br
+                  |мы используем
+              li
+                img(src="images/star-2.svg" loading="lazy" alt="icon" width="22" height="22").d-block
+                div Как обеспечить 100% 
+                  br
+                  |загруженность школы
+              li
+                img(src="images/star-2.svg" loading="lazy" alt="icon" width="22" height="22").d-block
+                div Как работать с персоналом 
+                  br
+                  |и сотрудниками
+              li
+                img(src="images/star-2.svg" loading="lazy" alt="icon" width="22" height="22").d-block
+                div Как масштабироваться 
+                  br
+                  |до собственной сети
+              li
+                img(src="images/star-2.svg" loading="lazy" alt="icon" width="22" height="22").d-block
+                div Как быстро окупить 
+                  br
+                  |вложения
+
+      .investment-section__feedback
+        .feedback
+          form(data-feedback-form).feedback__form
+            .feedback__title.font-m-e-bold.font-s-30 Запишитесь на тест-драйв 
+              br
+              |франшизы!
+            .feedback__list
+              .feedback__item
+                .input
+                  input(type="text" name="name" autocomplete="off" placeholder="Имя").input__field
+              .feedback__item
+                .input
+                  input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон").input__field
+              .feedback__item
+                .input
+                  input(type="email" name="email" autocomplete="off" placeholder="E-mail").input__field
+              .feedback__item
+                button.btn(type="submit")
+                  span Записаться

@@ -9,12 +9,20 @@ function initAnchorBtn() {
   })
 }
 
+function initActiveItem() {
+  $('.investment-js').on('click', function () {
+    $('.investment-js').removeClass('active')
+    $(this).addClass('active')
+  })
+}
+
 function setCurrentYear() {
   $('[data-current-year]').text(new Date().getFullYear())
 }
 
 $(document).ready(function () {
   initAnchorBtn()
+  initActiveItem()
   setCurrentYear()
 
   $('input').inputmask()
