@@ -16,14 +16,9 @@ function initActiveItem() {
   })
 }
 
-function setCurrentYear() {
-  $('[data-current-year]').text(new Date().getFullYear())
-}
-
 $(document).ready(function () {
   initAnchorBtn()
   initActiveItem()
-  setCurrentYear()
 
   $('input').inputmask()
 })
