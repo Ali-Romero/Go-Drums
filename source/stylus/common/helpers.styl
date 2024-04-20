@@ -44,6 +44,8 @@ h4
   color: $color-grey-1
 .color-grey-2
   color: $color-grey-2
+.color-grey-3
+  color: $color-grey-3
 .color-red-1
   color: $color-red-1
 .color-red-2
@@ -55,6 +57,9 @@ h4
 .font-m-med
   font-family: "Montserrat-Medium"
   font-weight: 500
+.font-m-s-bold
+  font-family: "Montserrat-SemiBold"
+  font-weight: 600
 .font-m-bold
   font-family: "Montserrat-Bold"
   font-weight: 700
@@ -62,6 +67,20 @@ h4
   font-family: "Montserrat-ExtraBold"
   font-weight: 800
 
+.font-s-16
+  font-size: 14px
+  line-height: normal
+  +above($breakpoints.md)
+    font-size: 15px
+  +above($breakpoints.xxl)
+    font-size: 16px
+.font-s-18
+  font-size: 15px
+  line-height: normal
+  +above($breakpoints.md)
+    font-size: 16px
+  +above($breakpoints.xxl)
+    font-size: 18px
 .font-s-24
   font-size: 15px
   line-height: normal
