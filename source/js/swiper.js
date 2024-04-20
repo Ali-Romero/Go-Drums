@@ -62,4 +62,5 @@ function initSwiperFinances() {
 
 $(document).ready(function () {
   initSwiperMain()
+  initSwiperFinances()
 })

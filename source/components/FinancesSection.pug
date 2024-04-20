@@ -1,0 +1,83 @@
+section.finances-section
+  .wrapper
+    .finances-section__inner
+      h2.finances-section__title.font-s-52.text-center
+        span.font-m-reg Знаем, как открыть 
+        br
+        |прибыльную школу игры
+        br
+        span.font-m-reg на барабанах
+
+      .finances-section__title-helper.font-s-24.text-center Франшиза в цифрах
+
+      .finances-section__cards.font-s-24.text-center.color-grey-2.swiper-finances
+        .finances-section__cards-list.swiper-wrapper
+          .finances-section__cards-item.swiper-slide
+            .finances-section__card
+              .finances-section__card-title.font-s-42.color-red-2.font-m-bold 295 900 
+                span.font-m-reg ₽
+              .finances-section__card-description чистая ежемесячная 
+                br
+                |прибыль
+          .finances-section__cards-item.swiper-slide
+            .finances-section__card
+              .finances-section__card-title.font-s-42.color-red-2.font-m-bold 10 месяцев
+              .finances-section__card-description средний 
+                br
+                |срок окупаемости
+          .finances-section__cards-item.swiper-slide
+            .finances-section__card
+              .finances-section__card-title.font-s-42.color-red-2.font-m-bold 33
+                span.font-m-reg %
+              .finances-section__card-description рентабельность 
+                br
+                |по чистой прибыли
+          .finances-section__cards-item.swiper-slide
+            .finances-section__card
+              .finances-section__card-title.font-s-42.color-red-2.font-m-bold 37 дней
+              .finances-section__card-description понадобится 
+                br
+                |на запуск
+          .finances-section__cards-item.swiper-slide
+            .finances-section__card
+              .finances-section__card-title.font-s-42.color-red-2.font-m-bold 1 035 000 
+                span.font-m-reg ₽
+              .finances-section__card-description средняя ежемесячная 
+                br
+                |выручка
+          .finances-section__cards-item.swiper-slide
+            .finances-section__card
+              .finances-section__card-title.font-s-42.color-red-2.font-m-bold 2 025 000 
+                span.font-m-reg ₽
+              .finances-section__card-description минимальный 
+                br
+                |размер инвестиций
+        .finances-section__cards-progress.swiper-progress.finances-pagination
+
+      .finances-section__feedback
+        .feedback
+          form(data-feedback-form).feedback__form
+            .feedback__title.font-s-30.font-m-bold
+              span.font-m-reg Хотите получить 
+              br
+              |детальные цифры 
+              br
+              |для вашего города 
+              br
+              span.font-m-reg и под ваш бюджет?
+            .feedback__description.font-s-20.color-grey-2 Скачайте финансовую модель 
+              br
+              |франшизы «GO!DRUMS»
+            .feedback__list
+              .feedback__item
+                .input
+                  input(type="text" name="name" autocomplete="off" placeholder="Имя").input__field
+              .feedback__item
+                .input
+                  input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон").input__field
+              .feedback__item
+                button.btn(type="submit")
+                  span Скачать
+
+      .finances-section__images
+        img(src="images/finances-images.png" loading="lazy" alt="image" width="780" height="581").d-block
