@@ -46,6 +46,10 @@ function initFeedbackForm() {
   $forms.on('submit', function (event) {
     event.preventDefault()
 
+    if ($(this).find('.honeypot').val() !== '') {
+      return
+    }
+
     if ($(this).valid()) {
       var fields = $(this)
         .serializeArray()
